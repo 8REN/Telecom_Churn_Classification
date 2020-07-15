@@ -10,6 +10,8 @@
  The contents of this repository contains an analysis of telecommunications 
  data regarding phone usage and customer retention.
  
+ data obtained from https://www.kaggle.com/becksddf/churn-in-telecoms-dataset
+ 
 data includes the following info:
        'state', 'account length', 'area code', 'phone number',
        'international plan', 'voice mail plan', 'number vmail messages',
@@ -26,26 +28,27 @@ Can customer churn be predicted with data provided?
 Are false positives preferred to false negatives?
  
 ### Libraries
-from geopy.distance import geodesic
-from geopy import Point
-import numpy as np 
-import pandas as pd 
-import seaborn as sns 
-import matplotlib.pyplot as plt
-import scipy.stats as stats
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-import statsmodels.stats.api as sms
-from statsmodels.formula.api import ols
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.ensemble import VotingClassifier 
+from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 from statsmodels.stats import diagnostic
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import cross_val_score
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from xgboost import XGBClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn import svm
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score
-from sklearn.model_selection import KFold
+from sklearn.svm import SVC
+from sklearn.feature_selection import RFE
+from sklearn.metrics import log_loss
+#from sklearn.metrics import plot_confusion_matrix
+from sklearn.metrics import precision_recall_curve
+#from sklearn.metrics import plot_precision_recall_curve
+
+from sklearn.pipeline import Pipeline
 
 ## perform gridsearch of multiple algorithms to find
 ## best fit for the job
@@ -59,10 +62,20 @@ columns not factored into assessment include:
 'total intl minutes',
 this is due to high correlation with other features, or irrelevance to assessment
 
+### models
 
+   * RandomForestClassifier(),
+   * KNeighborsClassifier(),
+   * LogisticRegression(),
+   * SGDClassifier(),
+   * DecisionTreeClassifier(),
+   * SVC(),
+   * XGBClassifier(),
+   * AdaBoostClassifier(),
+   
  ![corrheatmap](https://github.com/br3nnan8/mod3_classificationproject/blob/master/visualizations/corrheatmap.png)
 
- ![age/pricescatter](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_ageprice_scatter.png)
+ ![piechart](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_ageprice_scatter.png)
  
  ![violinplot1](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_bedvsprice_violin.png)
  
@@ -72,6 +85,6 @@ this is due to high correlation with other features, or irrelevance to assessmen
  
 ![lot/pricekde](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_renovatedvsnonrenovated_kde.png)
  
- To expand on this project, I would like to assess scaling the continuous data and providing more weight to certain variables in the model. Additional regressions with polynomials as well.
+ To expand on this project, I would continue to work on my parameter assessment.
  
  
