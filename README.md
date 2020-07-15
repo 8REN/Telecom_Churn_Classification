@@ -74,10 +74,12 @@ this is due to high correlation with other features, or irrelevance to assessmen
    * AdaBoostClassifier(),
    
  ![corrheatmap](https://github.com/br3nnan8/mod3-classificationproject/blob/master/corrheatmap.png)
+ 
+  ![pair](https://github.com/br3nnan8/mod3-classificationproject/blob/master/pairplot.png)
 
  ![statebar](https://github.com/br3nnan8/mod3-classificationproject/blob/master/statevschurn.png)
  
- ![pie](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_bedvsprice_violin.png)
+ ![pie](https://github.com/br3nnan8/mod3-classificationproject/blob/master/pie.png)
  
  ![comp](https://github.com/br3nnan8/mod3-classificationproject/blob/master/roccomp.png)
  
@@ -85,6 +87,7 @@ this is due to high correlation with other features, or irrelevance to assessmen
  
 
  
- To expand on this project, I would continue to work on my parameter assessment.
+ To expand on this project, I would continue to work on my parameter assessment, create possible 
+ ensemble pipeline to yield better results
  
  
