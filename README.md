@@ -73,17 +73,17 @@ this is due to high correlation with other features, or irrelevance to assessmen
    * XGBClassifier(),
    * AdaBoostClassifier(),
    
- ![corrheatmap](https://github.com/br3nnan8/mod3_classificationproject/blob/master/visualizations/corrheatmap.png)
+ ![corrheatmap](https://github.com/br3nnan8/mod3-classificationproject/blob/master/corrheatmap.png)
 
- ![piechart](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_ageprice_scatter.png)
+ ![statebar](https://github.com/br3nnan8/mod3-classificationproject/blob/master/statevschurn.png)
  
- ![violinplot1](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_bedvsprice_violin.png)
+ ![pie](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_bedvsprice_violin.png)
  
- ![violinplot2](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_gradevsprice_violin.png)
+ ![comp](https://github.com/br3nnan8/mod3-classificationproject/blob/master/roccomp.png)
  
- ![lot/pricekde](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_lotsizeprice_kde.png)
+ ![comp2](https://github.com/br3nnan8/mod3-classificationproject/blob/master/prcurvecomp.png)
  
-![lot/pricekde](https://github.com/br3nnan8/mod2_kc_housing_regression/blob/master/visualizations/kc_renovatedvsnonrenovated_kde.png)
+
  
  To expand on this project, I would continue to work on my parameter assessment.
  
