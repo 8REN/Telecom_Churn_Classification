@@ -54,6 +54,7 @@ from sklearn.pipeline import Pipeline
 ## best fit for the job
 
 columns not factored into assessment include: 
+'phone number',
 'area code', 
 'number vmail messages', 
 'total day minutes',
