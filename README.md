@@ -74,21 +74,21 @@ this is due to high correlation with other features, or irrelevance to assessmen
    * XGBClassifier(),
    * AdaBoostClassifier(),
    
- ![corrheatmap](https://github.com/br3nnan8/mod3-classificationproject/blob/master/corrheatmap.png)
+ ![corrheatmap](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/corrheatmap.png)
  
-  ![pair](https://github.com/br3nnan8/mod3-classificationproject/blob/master/pairplot.png)
+  ![pair](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/pairplot.png)
 
- ![statebar](https://github.com/br3nnan8/mod3-classificationproject/blob/master/statevschurn.png)
+ ![statebar](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/statevschurn.png)
  
- ![pie](https://github.com/br3nnan8/mod3-classificationproject/blob/master/pie.png)
+ ![pie](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/pie.png)
  
- ![comp](https://github.com/br3nnan8/mod3-classificationproject/blob/master/roccomp.png)
+ ![comp](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/roccomp.png)
  
- ![comp2](https://github.com/br3nnan8/mod3-classificationproject/blob/master/prcurvecomp.png)
+ ![comp2](https://github.com/br3nnan8/mod3-classificationproject/blob/master/visualaids/prcurvecomp.png)
  
 
  
  To expand on this project, I would continue to work on my parameter assessment, create possible 
- ensemble pipeline to yield better results
+ ensemble pipeline to yield better results with fewer false negatives
  
  
